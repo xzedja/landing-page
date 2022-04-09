@@ -73,5 +73,62 @@ body {
 .intro-img img{
     width: 400px;
     height: 275px;
-    margin: 20px;
+}
+
+.intro-text#main-left , .intro-img#main-right{
+    flex: 1 1 0;
+    margin: 40px;
+}
+
+.pkrz-roster {
+    align-items: center;
+}
+h2 {
+    font-style: extra-bold;
+    color:burlywood;
+    text-align:center;
+}
+
+.pkrz-roster {
+    /* text-align:center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    background-color:bisque;
+    padding: 100px;
+    /* align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column; */
+    /* border: 20px solid blue; */
+}
+
+.card-text {
+    margin-top: 10px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* .card#rodgers, .card#aaron, .card#ervine, .card#wyatt{
+    flex: 1 1 0;
+    margin: 40px;
+} */
+
+.pkrz-roster img {
+    width: 200px;
+    height: 200px;
+    object-fit:cover;
+    margin: 5px 20px 0px 20px;
+    border-radius: 10px;
+    /* padding: 10px; */
+    border: 4px solid black;
+
 }
