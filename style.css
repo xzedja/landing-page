@@ -6,37 +6,58 @@
 
 body {
     background-color: #1f2937;
+    /* margin-left: 10px;
+    margin-right: 10px; */
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: auto;
+    /* height: 80px; */
     justify-content: space-between;
     background-color: #1f2937;
     color: #f9faf8;
-
+    /* position: fixed; */
+    /* top: 0;
+    /* left: 0;
+    right: 0; */ 
+    /* border-radius: 5px;
+    border: 5px solid burlywood; */
+    margin: 0;
+    
+    /* padding-left: 30px;
+    padding-right: 30px; */
 }
 
-.navbar .logo {
-    display: flex;
+.navbar .logo img{
+    /* display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    list-style: none;
-    float: left;
-    margin-left: 20px;
-    font-size: 24px;
+    /* list-style: none; */
+    /* float: left; */
+    /* margin-left: 20px; */
+    /* font-size: 24px; */
+    width: 100px;
+    height: 100px; 
+    object-fit:cover;
+    align-items: center;
+    vertical-align: middle;
+    /* display:inline-block; */
+    /* border-radius: 10px;
+    border: 3px solid black; */
+    
 }
 
 .nav-links {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    /* align-items: center; */
+    /* justify-content: flex-end; */
+    /* text-align: center; */
     list-style: none;
-    float: right;
-    margin-right: 20px;
+    /* float: right; */
+    /* margin-right: 30px; */
     font-size: 18 px;
 }
 
@@ -46,17 +67,23 @@ body {
 
 .nav-links li {
     margin: 3px;
+    padding: 15px;
+    /* border: 3px solid black; */
 }
 
 .main {
     flex-flow: row nowrap;
+    padding: 10px;
+    width: auto;
+    /* justify-content: space-evenly; */
 }
 
 .main .intro{
-    margin-top: 30px;
+    margin-top: 100px;
     display:flex;
     align-items: center;
-    justify-content: space-evenly;
+    /* justify-content: space-between; */
+    row-gap: 30px;
     width: 100%;
     background-color:#1f2937
 }
@@ -74,6 +101,7 @@ body {
     color:#f9faf8;
     flex-direction: column;
     align-items: center;
+    /* border: 4px solid black; */
 }
 
 .intro-description {
@@ -86,9 +114,11 @@ body {
 }
 
 .intro-img img{
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 350px;
     object-fit:cover;
+    border: 4px solid black;
+    border-radius: 10px;
 }
 
 .intro-text#main-left , .intro-img#main-right{
@@ -96,23 +126,31 @@ body {
     margin: 40px;
 }
 
-.pkrz-roster {
+/* .pkrz-roster {
     align-items: center;
-}
-h2 {
+    border: 4px solid black;
+} */
+.pkrz-roster h2 {
     font-style: extra-bold;
     color:burlywood;
     text-align:center;
+    /* border: 1px solid black; */
+    /* padding: 20px; */
+    flex-basis: 100%;
+    font-size: 35px;
 }
 
 .pkrz-roster {
     /* text-align:center; */
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    flex-flow: row nowrap;
+    align-items: flex-start;
+    flex-flow: row wrap;
     background-color:bisque;
-    padding: 100px;
+    padding: 100px 0px 100px 0px;
+    width: 100%;
+    /* margin: 0px; */
+    /* border: 4px solid black; */
     /* align-items: center;
     width: 100%;
     justify-content: space-between;
@@ -124,14 +162,17 @@ h2 {
     margin-top: 10px;
     text-align: center;
     flex-wrap: wrap;
+    /* border: 4px solid black; */
 }
 
 .card {
     display:flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-evenly;
-
+    padding: 10px;
+    /* border: 4px solid black; */
 }
 
 /* .card#rodgers, .card#aaron, .card#ervine, .card#wyatt{
